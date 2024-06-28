@@ -1,0 +1,16 @@
+import torch
+
+DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+NUM_SAMPLES = 12
+RUN_NAME = 'baseline'
+SEED = 0
+BATCH_SIZE = 128
+GEN_LEARNING_RATE = 0.0005
+DISC_LEARNING_RATE = 0.00005
+BETA1 = 0.5
+BETA2 = 0.999
+LATENT_DIMS = 100
+NUM_GEN_KERN = 128
+NUM_DISC_KERN = 128
+NUM_CHANNELS = 1
+EPOCHS = 20
